@@ -5,6 +5,7 @@ void countPrime(int n){
    vector<bool> isPrime(n+1,true);
    isPrime[0] =isPrime[1]=false;
    int c=0;
+   //time complexity O(nlog(logn))
     for(int i =2;i<n;i++){
         if(isPrime[i]){
             c++;
